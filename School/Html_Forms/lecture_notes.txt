@@ -1,0 +1,56 @@
+Form Elements:
+- <form> input elemnt </form>
+
+- input : (used to input elements)
+text - write text
+checkbox - check box (square), multiple boxes selected
+radio - circle button (only one box selected)
+submit - send info
+button - button 
+
+<input type="" id="" name="" value=""> </input>
+
+
+- Label: (screen readers, accessability)
+
+
+- Select and options:
+size  - looks (add name to them all)
+multiple - how many of the
+
+- TextArea:
+<textarea name="mytext" rows="10" 
+cols="90">Here, I will provide a 
+very long text.</textarea>
+
+- DataList:
+
+
+
+INPUT ATTRIBUTES:
+value: provides and initial value for the input field
+• readonly: input field is read only, but will be sent with the form
+• disabled: input field is disabled and not sent with the form
+• size: specifies the visible with in characters
+• maxlength: specifies the max number of characters allowed
+• min and max: specifies the min and max values allowed
+• multiple: allows to enter more than one value
+• pattern: provides a pattern to check the input value against
+• placeholder: provides a short hint displayed in the input field
+• required: specifies that input field cannot be empty
+• step: provides allowed intervals for an input field
+• autofocus: specifies that field must be focused on page load
+• height and width: specifies height and width
+• list: refers to a datalist element with pre-defined options
+• autocomplete: turns on and off the autocomplete for a field
+
+
+INPUT ON PHONE:
+input type tel - will not be different in browswer but will be different on the TELEPHONE
+input type email - also changes phone keyboard 
+input type date - also changes keyboard on phone
+
+
+Form ATTRIBUTES:
+action - where the form goes
+target - what should happen to it 

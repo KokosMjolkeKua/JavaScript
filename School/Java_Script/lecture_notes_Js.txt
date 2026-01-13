@@ -1,0 +1,26 @@
+INTRO: Engines
+- dont need per compiled, can be run on any device
+- need a compiler, Intellij VsCode etc (compiler job, compiling so computer can understand)
+- compiling basically means they turn the language you are writing on, and makes it 
+    understandable for the computer and vice-versa.
+Engines: 
+- V8, SpiderMonkey, Chakra, SquirrelFish (used for browsers(firefox, chrome etc))
+
+
+JAVASCRIPT: Possibilities
+- add/remove html (modify old, add new content etc)
+- respond to user actions
+- send network requests
+- store access
+- open dialog with visitors, display messages
+
+
+PLacing scripts:
+- two ways
+- directly in the html
+- seperately in a .js file, reffering it in html, and then implementing inside the desired html destination
+
+
+Making a Chip (processor)
+- youtube: from sand to silicon: The making of a chip | Intel
+
