@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script src="external_js.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <article name="Placing Scripts">
+                <p>Before... </p>
+                <script>
+                    function addNumbers (x,y) {
+                        //z = x + y; instead and then return z;
+                        return x + y;
+                    }
+
+                    document.write(addNumbers(3,4));
+
+
+                    let x = myFunction(4,3);
+                    console.log("Result is: " + x);
+                    console.log(y);
+
+                    function myFunction(a,b){
+                        //will not work becauase y is defined inside function and not outside
+                        let y = 3;
+                        return y * a * b;
+                    }
+
+                
+                </script>
+                <p>After...</p>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

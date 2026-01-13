@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script src="external_js.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <article name="Placing Scripts">
+                <p>Before... </p>
+                <script>
+                    const greet = function(){
+                        console.log("Hi There...");
+                        //basically like sout in java, does not show up in the browser but in the console
+                    }
+                    greet();
+
+
+                    const add = function(a,b){
+                        return a + b;
+                    }
+                    const add2 = (a,b) => {
+                        return a + b;
+                    }
+                    const add3 = (a,b) => a + b;
+
+                    console.log(add);
+                    console.log(add2);
+                    console.log(add3);
+
+
+                </script>
+                <p>After...</p>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

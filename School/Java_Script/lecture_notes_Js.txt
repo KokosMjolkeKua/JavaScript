@@ -21,6 +21,37 @@ PLacing scripts:
 - seperately in a .js file, reffering it in html, and then implementing inside the desired html destination
 
 
-Making a Chip (processor)
+Making a Chip (processor), CPU
 - youtube: from sand to silicon: The making of a chip | Intel
 
+
+Operators:
+==
+!=
+etc
+
+
+ControllFlow (If or else statements)
+- if (if condition is met)
+- else (other)
+- (if-else) if else is used so that if the first one is met, the next one will not be used. and if one 
+of them is used then the others are redundant
+
+
+Switch;
+- same as java basically. 
+Switch(fruit)
+case etc
+default..
+
+
+while and do-while
+- while (first check condition)
+- do while (check condition after, at least one run through even if the condition is not made)
+
+Loops:
+- for repetately executed code
+
+
+
+FUNCTIONS:
