@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>School</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            
+            <table id="mytable" border="2"></table>
+
+            <script>
+                let rows = window.prompt("Enter the number of rows:");
+                let columns = window.prompt("Enter the number of columns:");
+
+                //const row = input(alert("How many rows?"));
+                //const column = input(alert("How many columns?"));
+                
+                rows = parseInt(rows);
+                columns = parseInt(columns);
+
+                createTable(rows,columns);
+
+                function createTable(rows,columns){
+                    let table = document.getElementById("mytable");
+
+                    for(let i = 0; i < rows; i++){
+                        let r = table.insertRow(i);
+                        for(let j = 0;j < columns;j++){
+                            let c = r.insertCell(j);
+                            c.innerHTML = "Row-" + i + " Column-" + j;
+                        }
+                    }
+                }
+            </script>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

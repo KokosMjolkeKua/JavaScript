@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>School</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            
+        <select id="select">
+            <option value="">Red</option>
+            <option value="">Yellow</option>
+            <option value="">Blue</option>
+            <option value="">Green</option>
+            <option value="">Orange</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="button" value="Select and Remove" onclick="removeOption()">
+
+        <script>
+
+            let s = document.getElementById("select");
+            //s.onchange = function(){
+            //    alert(s.selectedIndex);
+            //};
+
+            s.onchange = () => alert(s.selectedIndex);
+
+            function removeOption(){
+                let select = document.getElementById("select");
+                select.remove(select.selectedIndex);
+            }
+        </script>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

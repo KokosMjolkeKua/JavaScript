@@ -1,0 +1,18 @@
+Functions:
+- expression
+- variables
+
+- arrow Functions
+- const add = function(a,b){
+    return a+b;
+}
+- const add2 = (a,b) =>{
+    return a+b;
+}
+
+Excersize:
+- create a table dynamically 
+- nr of rows
+- nr of columns
+
+- Dropdown menu
