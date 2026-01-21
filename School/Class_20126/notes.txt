@@ -16,3 +16,9 @@ Excersize:
 - nr of columns
 
 - Dropdown menu
+
+
+
+JAVASCRIPT: IMPORTANT
+- Objects
+- 

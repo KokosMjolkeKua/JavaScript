@@ -9,7 +9,55 @@
 
         </header>
         <main>
-        
+            <script>
+                //ARRAYS
+                const numbers = [1,2,3,4,5];
+                const fruits = ['apple','pear','cherry'];
+
+                const numby = new Array(1,2,3,4,5);
+                const fruity = new Array('apple','banana','cherry');
+
+                const emptyArray = [];
+                const anotherEmpty = new Array();
+
+                console.log(fruits[1]);
+                console.log(fruits[0]);
+
+                fruits[1] = 'blueberry';
+                console.log(fruits);
+
+                fruits.push('date');//adds
+                console.log(fruits);
+
+                fruits.pop(); //removes the last element
+                console.log(fruits);
+
+                fruits.shift();
+                console.log(fruits);
+
+
+
+                const numbies = [1,2,3,4,5];
+                for(let i = 0;i<numbies.length;i++){
+                    console.log(numbers[i]);
+                }
+
+                while(numbies.length > 0){
+                    console.log(numbies.pop());
+                }
+
+                numbies.forEach(function(a){
+                    console.log(a);
+                });
+
+                numbies.forEach((a)=>console.log(a));
+
+                const doubled = numbies.map((number) => number + number);
+                console.log(doubled);
+
+                const even = numbers.filter((number) => number % 2 === 0);
+                console.log(even);
+            </script>
         </main>
         <footer>
 
