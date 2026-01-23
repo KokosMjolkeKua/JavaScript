@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Independent Javascript</title>
+        <style>
+            header{
+                border-radius:15px;
+                margin:5px;
+                padding-bottom:10px;
+                padding-top:10px;
+                background-color: rgba(25, 149, 42, 0.5);
+                text-align:center;
+                h1{
+                    font-family: "Lucida Console", "Courier New", monospace;
+                    font-size:4em;
+                    color:white;
+                }
+            }
+
+            body{
+                border-radius:15px;
+                margin:5px;+
+                padding-bottom:10px;
+                padding-top:10px;
+                background-color: rgba(25, 149, 42, 0.5);
+                text-align:center;
+                font-family: "Lucida Console", "Courier New", monospace;
+                color:white;
+                h2{
+                    font-size:3em;
+                }
+                h3{
+                    font-size:2em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <h2>Welcome to this Website</h2>
+            <h3>Independent Javascript</h3>
+            <br/>
+            <br/>
+            <label for="select">Choose One: </label>
+            <select id="select">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="reset">Reset</option>
+            </select>
+            <br/>
+            <br/>
+            <button value="Change Colour" onclick="changeColour()">=== Press Me! ===</button>
+            <br/>
+            <br/>
+            <script src="script.js"></script>
+        </article>
+    </body>
+</html>

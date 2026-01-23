@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Converter</title>
+        <script defer src="script.js"></script>
+        <style>
+            body{
+                border-radius:15px;
+                margin:5px;
+                padding-bottom:10px;
+                padding-top:10px;
+                background-color:rgba(225, 82, 122,0.5);
+                text-align:center;
+
+            }
+            h1{
+                font-family: "Lucida Console", "Courier New", monospace;
+                font-size:2em;
+                color:white;
+                margin:0;
+                padding:15px;
+            }
+            form{
+                border-radius:15px;
+                margin:5px;
+                padding-bottom:10px;
+                padding-top:10px;
+                background-color: rgba(225, 82, 122,0.5);
+                text-align:center;
+                font-family: "Lucida Console", "Courier New", monospace;
+                color:white;
+                font-size:1em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Convert from Meter to Other Units: </h1>
+        <!-- ================= STUDENT TASK ================= -->
+        <!-- TODO:
+             Create a form for converting meters to another unit.
+
+             IMPORTANT:
+             The JavaScript is already written and expects:
+             - a form with id="convertForm"
+             - an input with id="meters" (number input for meters)
+             - a select dropdown with id="unit"
+
+             If the IDs do not match exactly, the converter will NOT work.
+        -->
+
+        <form id="convertForm">
+
+            <!-- TODO:
+             Create a label and number input for meters
+             The input MUST have id="meters"
+            -->
+            <label for="meters">Input Number (meter): </label>
+            <br/>
+            <br/>
+            <!-- TODO:
+             Create a dropdown (select)
+             The select MUST have id="unit"
+
+             Each option:
+             - value = conversion factor
+             - data-name = unit name shown in the alert
+            -->
+            <input id="meters" type="number">
+            <br/>
+            <br/>
+
+
+            <label for="unit">Unit to Convert: </label>
+            <br/>
+            <br/>
+            <select id="unit">
+                <option data-name="Meters" value="1">Meter</option>
+                <option data-name="Yards" value="1.0936133">Yard</option>
+                <option data-name="Inches" value="39.3700787">Inches</option>
+                <option data-name="Feet" value="3.2808399">Feet</option>
+                <option data-name="Bananas" value="5.3">Bananas</option>
+                <option data-name="Fully extended cats" value="1.8">Fully Extended Cats</option>
+                <option data-name="Toe nail clippings" value="500">Toe Nail Clippings</option>
+            </select>
+
+            <br/>
+            <br/>
+
+            <button type="submit"> === Convert === </button>
+
+            <br/>
+            <br/>
+        </form>
+
+        <!-- TODO:
+             Add a button to submit the form
+            -->
+
+
+        <!-- =============== END STUDENT TASK =============== -->
+    </body>
+</html>

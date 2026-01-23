@@ -1,0 +1,52 @@
+body {
+    text-align:center;
+}
+
+header{
+    border-radius:15px;
+    margin:5px;
+    padding-bottom:10px;
+    padding-top:10px;
+    background-color:rgba(255, 99, 71, 0.5);
+
+
+}
+
+header h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:5em;
+    color:white;
+}
+
+main {
+    border-radius: 15px;
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+main .info{
+        padding-bottom:5px;
+        padding-top:5px;
+        font-size:3em;
+        color:white;
+        font-family:"Lucida Console", "Courier New", monospace;
+}
+
+main article{
+        margin:10px;
+        padding-bottom:5px;
+        padding-top:5px;
+        font-family:"Lucida Console", "Courier New", monospace;
+        border:solid white 2px;
+        color:white;
+
+}
+
+h3{
+    font-size:3em;
+    color:white;
+}
+h4{
+    font-size:2.5em;
+}

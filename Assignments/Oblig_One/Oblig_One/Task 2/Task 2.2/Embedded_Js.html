@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Embedded Javascript</title>
+        <style>
+            header{
+                border-radius:15px;
+                margin:5px;
+                padding-bottom:10px;
+                padding-top:10px;
+                background-color:rgba(56, 98, 255, 0.5);
+                text-align:center;
+
+            }
+            header h1{
+                 font-family: "Lucida Console", "Courier New", monospace;
+                 font-size:4em;
+                 color:white;
+                 margin:0;
+             }
+            main{
+                border-radius:15px;
+                margin:5px;
+                padding-bottom:10px;
+                padding-top:10px;
+                background-color:rgba(56, 98, 255, 0.5);
+                text-align:center;
+                font-family: "Lucida Console", "Courier New", monospace;
+                color:white;
+
+            }
+            main h2{
+                font-size:3em;
+                margin:0.25em 0;
+              }
+            main h3{
+                font-size:2em;
+                margin:0.25em 0;
+            }
+            main h4{
+                font-size:1em;
+                margin:0.25em 0;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Embedded Javascript</h1>
+        </header>
+        <main>
+            <article>
+                <h2>Welcome to this Website</h2>
+                <h3>Currently embedded with Javascript</h3>
+                <br/>
+                <br/>
+                <label for="num">Write a Number:</label>
+                <input type="number" id="num">
+                <br/>
+                <br/>
+                <input type="button" value="=== Press Me! ===" id="butt" onclick="check()">
+                <br/>
+                <br/>
+                <h4>Message: <span id="result"></span></h4>
+
+                <script>
+                    console.log("Hello World!");
+                    console.log("This website has embedded Javascript!")
+
+                    function check(){
+                        const input = document.getElementById("num").value;
+                        const x = parseFloat(input);
+
+                        if(isNaN(x)){
+                            document.getElementById("result").textContent = "Please write a number!";
+                            alert("Please write a number!");
+                            return;
+                        }
+
+                        if(x < 0){
+                            console.log("This is a Negative number..");
+                            alert("This number is Negative!");
+                            document.getElementById("result").textContent = "This number is Negative!";
+                        }
+                        else if(x > 0){
+                            console.log("This is a Positive number..");
+                            alert("This number is Positive!");
+                            document.getElementById("result").textContent = "This number is Positive!";
+                        }
+                        else{
+                            console.log("This number is Zero!");
+                            alert("This number is Zero!");
+                            document.getElementById("result").textContent = "This number is Zero!";
+                        }
+                    }
+                </script>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
