@@ -1,0 +1,14 @@
+Synchrounus Programming:
+- simple sequential exsecution
+eks. 1+1
+will not contiue until statement/action is made and finished.
+
+Asynchrous Programming:
+- having tasks run at the same time, several tasks
+- javascript is this, because several tasks can be done. 
+- in most programs you need to finish one process for the next to start
+- "How do you make a program that doesnt have to be finished for
+    the next task to start"
+
+- Callbacks, calling back to a function that waits for one process  
+    to complete and continues after.    

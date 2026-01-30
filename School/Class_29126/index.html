@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Class</title>
+        <style>
+
+        </style>
+        <script>
+            const Employee = {
+                dept: "Sales",
+                floor: 3,
+                greet: function(){
+                    console.log("Hello, " + this.name);
+                }
+            };
+
+            const person = Object.create(Employee);
+            person.name = "Akif";
+
+            //ASynchronized
+            //setTimeout (function() {
+            //    console.log("Process 1")
+            //},3000);
+            
+            console.log("Process 2");
+            console.log("Process 3");
+            console.log("Process 4");
+
+
+            function asyncFunction(callback){
+                setTimout(function(){
+                    console.log("Process Async");
+                    callback();
+                },3000);
+            }
+
+            function syncFunction(){
+                console.log("Process 6");
+                console.log("Process 7");
+                console.log("Process 8");
+            }
+
+            asyncFunction(syncFunction);
+        </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

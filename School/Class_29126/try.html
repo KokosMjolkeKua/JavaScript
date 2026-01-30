@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Class</title>
+        <style>
+
+        </style>
+        <script>
+            //FUNCTION Open Laptop:
+            //Step 1.open laptop
+            function openLaptop(callback){
+                setTimeout(function(){
+                    console.log("Laptop is opened!");
+                    callback();
+                }, 2000);
+            }
+
+            //step 2: write Code
+            function writeCode(callback){
+                setTimeout(function(){
+                    console.log("Code is written!");
+                    callback();
+                },3000);
+            }
+
+            //step 3: submit code
+            function submitCode(callback){
+                setTimeout(function(){
+                    console.log("Code is Submitted!");
+                    callback();
+                },1500);
+            }
+
+            //openLaptop(writeCode(submitCode));
+            openLaptop(function(){
+                writeCode(function(){
+                    submitCode(function(){
+                        console.log("You have finshed your assignment!");
+                    })
+                })
+            });
+            
+        </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

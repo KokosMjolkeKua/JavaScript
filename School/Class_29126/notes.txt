@@ -1,0 +1,27 @@
+Objects: Creation:
+- creating objects(making methods that allow you to create new objects based on existing objects)
+
+Using in html:
+- added JAVASCRIPT
+- in console, ask Employee, person and person.greet()
+- 
+
+can define how a class looks like and the externally change the variables
+- some are uniquie, but some can be changed (same concept but you work with the objects instead of classes.)
+
+
+
+Dom Manipulations:
+- will not wait for other functions to start/finished
+- eks; console.log, alert etc 
+- in javascript network requests are async in nature
+
+implementing load functions - async functions
+- ways to do (fetchAPI)
+
+Async Promises: 
+- a promise is an object representing the eventual execution(succesful or otherwise)
+- if we use the keyword await, it returns a promise, so resolve
+
+NEXT LECTURE:
+- Manipulating DOM: intro

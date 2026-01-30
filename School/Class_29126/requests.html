@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Requests</title>
+        <style>
+
+        </style>
+        <script>
+            function openLaptop(){
+                return new Promise((resolve, reject) => {
+                    setTimeout(function(){
+                        const laptopOpened = true;
+                        if (laptopOpened){
+                            resolve("Laptop is Opened!");
+                        } else{
+                            reject("Laptop is not open..");
+                        }
+                    },1000);
+                });
+            }
+
+            function writeCode(){
+                return new Promise((resolve, reject) => {
+                    setTimeout(function(){
+                        const codeWritten = true; 
+                        //if turned false, the catch will stop the code from running,
+                        //because you need to finish ones step to be able to go to the next 
+                        if (codeWritten){
+                            resolve("Code is written!");
+                        } else{
+                            reject("Code is not written..");
+                        }
+                    },3000);
+                });
+            }
+
+            function submitCode(){
+                return new Promise((resolve, reject) => {
+                    setTimeout(function(){
+                        const codeSubmitted = true;
+                        if (codeSubmitted){
+                            resolve("Code is Submitted!");
+                        } else{
+                            reject("Code is not Submitted..");
+                        }
+                    },1000);
+                });
+            }
+
+            async function doAssignment(){
+                try{
+                    const laptopOpened = await openLaptop();
+                    console.log(laptopOpened);
+
+                    const codeWritten = await writeCode();
+                    console.log(codeWritten);
+
+                    const codeSubmitted = await submitCode();
+                    console.log(codeSubmitted);
+
+                    console.log("You have completed your Assignment!");
+                } 
+                catch(error){
+                        console.error(error);
+                }
+            }
+            //async and await function
+            //wait for the method to finish the execution, then do your
+            //funciton
+
+            doAssignment();
+
+
+            //openLaptop().then((value)=>{console.log(value);
+            //    return writeCode().then((value)=>{console.log(value); 
+            //    return submitCode().then((value)=>{console.log(value);})
+            //    .catch((error)=>{console.error(error);})})});
+
+        </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
